@@ -55,7 +55,6 @@ func echoHandler(w http.ResponseWriter, r *http.Request) {
 		countersMutex.Lock()
 		connectionCounter[conn] += receivedNumber
 
-		// Send back the current counter value.
 		counterMessage := strconv.Itoa(connectionCounter[conn])
 		countersMutex.Unlock()
 		err = conn.WriteMessage(websocket.TextMessage, []byte(counterMessage))
