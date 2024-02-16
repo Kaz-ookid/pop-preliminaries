@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/websocket"
 )
 
-const PORT = 11337
+const PORT = 8080
 
 var PORT_STR = ":" + strconv.Itoa(PORT)
 
