@@ -48,10 +48,13 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
+
     implementation("com.tinder.scarlet:scarlet:0.1.12")
     implementation("com.tinder.scarlet:websocket-okhttp:0.1.12" )
     implementation("com.tinder.scarlet:message-adapter-moshi:0.1.12")
+    implementation("com.tinder.scarlet:lifecycle-android:0.1.12")
     implementation("com.squareup.moshi:moshi:1.15.1")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.tinder.scarlet:stream-adapter-coroutines:0.1.12")
 
 }

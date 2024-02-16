@@ -9,6 +9,9 @@ interface WebSocketService {
     @Receive
     fun observeWebSocketEvent(): Flow<WebSocket.Event>
 
+    @Receive
+    fun observeMessages(): Flow<String>
+
     @Send
     fun sendNumber(number: Int)
 }
