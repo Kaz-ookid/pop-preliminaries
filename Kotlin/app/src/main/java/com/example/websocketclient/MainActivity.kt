@@ -9,8 +9,12 @@ import androidx.lifecycle.lifecycleScope
 import com.tinder.scarlet.WebSocket
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.reactive.asFlow
 
 class MainActivity : AppCompatActivity() {
+
+
 
     private lateinit var webSocketClient: WebSocketClient
 
@@ -20,6 +24,9 @@ class MainActivity : AppCompatActivity() {
 
         webSocketClient = WebSocketClient(application)
 
+        observeMessages()
+        observeWebSocketEvents()
+
         val numberInput = findViewById<EditText>(R.id.numberInput)
         val sendButton = findViewById<Button>(R.id.sendButton)
 
@@ -28,47 +35,46 @@ class MainActivity : AppCompatActivity() {
             if (numberString.isNotEmpty()) {
                 val number = numberString.toInt()
                 webSocketClient.webSocketService.sendNumber(number)
+                Toast.makeText(this, "Sent: $number", Toast.LENGTH_SHORT).show()
             }
         }
-
-        observeMessages()
-        observeWebSocketEvents()
     }
 
     private fun observeMessages() {
-        webSocketClient.webSocketService.observeMessages()
-            .onEach { message ->
-                // Handle received message
-                runOnUiThread {
-                    Toast.makeText(this, "Received: $message", Toast.LENGTH_SHORT).show()
+        lifecycleScope.launch {
+            webSocketClient.webSocketService.observeMessages()
+                .asFlow()
+                .collect { message ->
+                    runOnUiThread {
+                        Toast.makeText(this@MainActivity, "Received: $message", Toast.LENGTH_SHORT).show()
+                    }
                 }
-            }
-            .launchIn(lifecycleScope)
+        }
     }
 
     private fun observeWebSocketEvents() {
-        webSocketClient.webSocketService.observeWebSocketEvent()
-            .onEach { event ->
-                when (event) {
-                    is WebSocket.Event.OnConnectionOpened<*> -> {
-                        runOnUiThread {
-                            Toast.makeText(this, "Connected", Toast.LENGTH_SHORT).show()
+        lifecycleScope.launch {
+            webSocketClient.webSocketService.observeWebSocketEvent()
+                .asFlow()
+                .collect { event ->
+                    runOnUiThread {
+                        when (event) {
+                            is WebSocket.Event.OnConnectionOpened<*> -> {
+                                Toast.makeText(this@MainActivity, "Connected", Toast.LENGTH_SHORT).show()
+                            }
+                            is WebSocket.Event.OnConnectionFailed -> {
+                                Toast.makeText(this@MainActivity, "Connection Failed", Toast.LENGTH_SHORT).show()
+                            }
+                            is WebSocket.Event.OnConnectionClosed -> {
+                                Toast.makeText(this@MainActivity, "Disconnected", Toast.LENGTH_SHORT).show()
+                            }
+                            else -> {
+                                Toast.makeText(this@MainActivity, "Unknown Event", Toast.LENGTH_SHORT).show()
+                            }
                         }
                     }
-                    is WebSocket.Event.OnConnectionFailed -> {
-                        runOnUiThread {
-                            Toast.makeText(this, "Connection Failed", Toast.LENGTH_SHORT).show()
-                        }
-                    }
-                    is WebSocket.Event.OnConnectionClosed -> {
-                        runOnUiThread {
-                            Toast.makeText(this, "Disconnected", Toast.LENGTH_SHORT).show()
-                        }
-                    }
-                    else -> {}
                 }
-            }
-            .launchIn(lifecycleScope)
+        }
     }
 
 }

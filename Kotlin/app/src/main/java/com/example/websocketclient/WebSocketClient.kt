@@ -16,4 +16,5 @@ class WebSocketClient(application: Application) {
         .build()
 
     val webSocketService: WebSocketService = scarletInstance.create()
+
 }
