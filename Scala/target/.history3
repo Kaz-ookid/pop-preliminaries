@@ -1,0 +1,16 @@
+1708509935394:sbt:basic-websocket-server compile
+1708509947461:sbt:basic-websocket-server> compile
+1708510010951:basic-websocket-server> compile
+1708510015960:basic-websocket-server compile
+1708510035041:compile
+1708510039342:run
+1708510165175:cd basic-websocket-server
+1708510282441:[200~sbt clean compile
+1708510287161:sbt clean compile
+1708510290343:clean compile
+1708510331375:exit
+1708510424530:compile
+1708510431178:basic-websocket-server> compile
+1708510435146:basic-websocket-server compile
+1708510443680:run
+1708510465703:exit

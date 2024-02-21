@@ -1,0 +1,356 @@
+2024.02.21 11:03:16 INFO  Started: Metals version 1.2.2 in folders '/home/kaz/PoP/pop-preliminaries/Scala' for client Visual Studio Code 1.86.0.
+11:03:17.131 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+11:03:17.132 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+11:03:17.132 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+11:03:17.135 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+11:03:17.135 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 ...
+11:03:17.135 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+11:03:17.135 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+11:03:17.135 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 ...
+11:03:17.136 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/home/kaz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+11:03:17.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+11:03:17.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+11:03:17.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+11:03:17.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+11:03:17.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+11:03:17.138 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+11:03:17.141 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:03:17.141 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+11:03:17.142 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+11:03:17.142 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+11:03:17.142 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+11:03:17.196 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/home/kaz/PoP/pop-preliminaries/Scala/.metals/metals (H2 2.2)
+11:03:17.197 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+11:03:17.197 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+11:03:17.197 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+11:03:17.197 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+11:03:17.200 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+11:03:17.201 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+11:03:17.201 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:03:17.207 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+11:03:17.209 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:03:17.215 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+11:03:17.215 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+11:03:17.215 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+11:03:17.215 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:03:17.215 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+11:03:17.215 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+11:03:17.215 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+11:03:17.215 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+11:03:17.215 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:03:17.215 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+11:03:17.216 [pool-1-thread-1] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+11:03:17.218 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.011s)
+11:03:17.220 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+11:03:17.222 [pool-1-thread-1] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+11:03:17.224 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing  ...
+11:03:17.229 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+11:03:17.230 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+11:03:17.230 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+11:03:17.232 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.232 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+11:03:17.234 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.234 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Created Schema History table "PUBLIC"."flyway_schema_history"
+11:03:17.239 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+11:03:17.239 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V1__Create_tables.sql ...
+11:03:17.240 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+11:03:17.241 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 12: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+11:03:17.241 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 19: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+11:03:17.242 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 27: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+11:03:17.242 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 34: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+11:03:17.243 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "1 - Create tables" ...
+11:03:17.243 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - Create tables"
+11:03:17.244 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+11:03:17.245 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.245 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+11:03:17.246 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.246 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+11:03:17.246 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.246 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+11:03:17.247 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.247 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+11:03:17.248 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.248 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "1 - Create tables"
+11:03:17.249 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+11:03:17.253 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V2__Server_discovery.sql ...
+11:03:17.254 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+11:03:17.254 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "2 - Server discovery" ...
+11:03:17.255 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - Server discovery"
+11:03:17.255 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+11:03:17.256 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.256 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "2 - Server discovery"
+11:03:17.257 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+11:03:17.258 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V3__Jar_symbols.sql ...
+11:03:17.259 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+11:03:17.259 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 7: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+11:03:17.260 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 15: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+11:03:17.260 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "3 - Jar symbols" ...
+11:03:17.260 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - Jar symbols"
+11:03:17.261 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+11:03:17.263 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.264 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+11:03:17.268 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.268 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+11:03:17.269 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.269 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "3 - Jar symbols"
+11:03:17.270 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+11:03:17.272 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V4__Fingerprints.sql ...
+11:03:17.273 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+11:03:17.273 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "4 - Fingerprints" ...
+11:03:17.274 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "4 - Fingerprints"
+11:03:17.274 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+11:03:17.275 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+11:03:17.275 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "4 - Fingerprints"
+11:03:17.276 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+11:03:17.281 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.014s)
+11:03:17.289 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 30 of 102M
+2024.02.21 11:03:17 WARN  Build server is not auto-connectable.
+Feb 21, 2024 11:03:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2024.02.21 11:03:21 INFO  no build target found for /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.21 11:03:23 INFO  time: code lens generation in 3.53s
+Feb 21, 2024 11:03:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/src/main/scala/example/Hello.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/src/main/scala/example/Hello.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2118)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/src/main/scala/example/Hello.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:576)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:520)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1776)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:719)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2024.02.21 11:03:34 INFO  running '/home/kaz/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.02.21 11:03:36 INFO  [info] welcome to sbt 1.9.8 (Ubuntu Java 11.0.21)
+2024.02.21 11:03:38 INFO  [info] loading settings for project basic-websocket-server-build-build from metals.sbt ...
+2024.02.21 11:03:38 INFO  [info] loading project definition from /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/project
+2024.02.21 11:03:41 INFO  [info] loading settings for project basic-websocket-server-build from metals.sbt ...
+2024.02.21 11:03:41 INFO  [info] loading project definition from /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project
+2024.02.21 11:03:44 INFO  [success] Generated .bloop/basic-websocket-server-build.json
+2024.02.21 11:03:44 INFO  [info] compiling 1 Scala source to /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/target/scala-2.12/sbt-1.0/classes ...
+2024.02.21 11:03:44 INFO  [info] Non-compiled module 'compiler-bridge_2.12' for Scala 2.12.18. Compiling...
+2024.02.21 11:03:51 INFO  [info]   Compilation completed in 7.709s.
+2024.02.21 11:03:51 INFO  [error] /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala:7:1: expected class or object definition
+2024.02.21 11:03:51 INFO  [error] libraryDependencies ++= Seq(
+2024.02.21 11:03:51 INFO  [error] ^
+2024.02.21 11:03:51 INFO  [error] one error found
+2024.02.21 11:03:51 INFO  [success] Total time: 11 s, completed Feb 21, 2024, 11:03:52 AM
+2024.02.21 11:03:51 INFO  [info] compiling 1 Scala source to /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/target/scala-2.12/sbt-1.0/classes ...
+2024.02.21 11:03:51 INFO  [error] /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala:7:1: expected class or object definition
+2024.02.21 11:03:51 INFO  [error] libraryDependencies ++= Seq(
+2024.02.21 11:03:51 INFO  [error] ^
+2024.02.21 11:03:51 INFO  [error] one error found
+2024.02.21 11:03:51 INFO  [error] (Compile / compileIncremental) Compilation failed
+2024.02.21 11:03:51 INFO  [warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
+2024.02.21 11:03:52 INFO  time: ran 'sbt bloopInstall' in 17s
+2024.02.21 11:03:52 ERROR sbt command failed: /home/kaz/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall
+2024.02.21 11:05:03 INFO  skipping build import with status 'Failed'
+2024.02.21 11:12:04 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:12:08 INFO  running '/home/kaz/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.02.21 11:12:09 INFO  [info] welcome to sbt 1.9.8 (Ubuntu Java 11.0.21)
+2024.02.21 11:12:09 INFO  [info] loading settings for project basic-websocket-server-build-build from metals.sbt ...
+2024.02.21 11:12:10 INFO  [info] loading project definition from /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/project
+2024.02.21 11:12:10 INFO  [info] loading settings for project basic-websocket-server-build from metals.sbt ...
+2024.02.21 11:12:10 INFO  [info] loading project definition from /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project
+2024.02.21 11:12:13 INFO  [success] Generated .bloop/basic-websocket-server-build.json
+2024.02.21 11:12:13 INFO  [info] compiling 1 Scala source to /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/target/scala-2.12/sbt-1.0/classes ...
+2024.02.21 11:12:14 INFO  [error] /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala:7:1: expected class or object definition
+2024.02.21 11:12:14 INFO  [error] libraryDependencies ++= Seq(
+2024.02.21 11:12:14 INFO  [error] ^
+2024.02.21 11:12:14 INFO  [error] one error found
+2024.02.21 11:12:14 INFO  [success] Total time: 3 s, completed Feb 21, 2024, 11:12:14 AM
+2024.02.21 11:12:14 INFO  [info] compiling 1 Scala source to /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/target/scala-2.12/sbt-1.0/classes ...
+2024.02.21 11:12:14 INFO  [error] /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala:7:1: expected class or object definition
+2024.02.21 11:12:14 INFO  [error] libraryDependencies ++= Seq(
+2024.02.21 11:12:14 INFO  [error] ^
+2024.02.21 11:12:14 INFO  [error] one error found
+2024.02.21 11:12:14 INFO  [error] (Compile / compileIncremental) Compilation failed
+2024.02.21 11:12:14 INFO  [warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
+2024.02.21 11:12:15 INFO  time: ran 'sbt bloopInstall' in 7.26s
+2024.02.21 11:12:15 ERROR sbt command failed: /home/kaz/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall
+Feb 21, 2024 11:15:03 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 83
+2024.02.21 11:16:52 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:16:52 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:22:07 WARN  Could not find semantic tokens for: file:///home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:22:24 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:22:42 WARN  Could not find semantic tokens for: file:///home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:22:42 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:22:42 WARN  Could not find semantic tokens for: file:///home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:22:43 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:22:43 WARN  Could not find semantic tokens for: file:///home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:23:09 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:23:09 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:23:09 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:23:09 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:23:09 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:23:17 WARN  Could not find semantic tokens for: file:///home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:23:18 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:23:18 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+Feb 21, 2024 11:23:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 369
+2024.02.21 11:23:17 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:23:18 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:23:19 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:23:19 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/project/Dependencies.scala
+2024.02.21 11:24:13 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:24:50 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:25:13 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:26:55 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:29:48 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:29:50 WARN  no build target for: /home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/build.sbt
+2024.02.21 11:29:50 WARN  Using indexes to guess the definition of libraryDependencies
+2024.02.21 11:34:14 WARN  Could not find semantic tokens for: file:///home/kaz/PoP/pop-preliminaries/Scala/basic-websocket-server/src/main/scala/example/Hello.scala
+2024.02.21 11:36:21 INFO  Shutting down server
+2024.02.21 11:36:21 INFO  shutting down Metals
+2024.02.21 11:36:21 INFO  Exiting server
