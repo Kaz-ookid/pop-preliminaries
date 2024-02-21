@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WebSocket Test</title>
+<script>
+    var ws;
+
+    function connect() {
+        ws = new WebSocket('ws://localhost:8080/echo');
+
+        ws.onopen = function() {
+            document.getElementById('status').textContent = 'Connected';
+            console.log('Connected');
+        };
+
+        ws.onmessage = function(event) {
+            document.getElementById('messages').textContent = 'Received: ' + event.data;
+            console.log('Received: ' + event.data);
+        };
+
+        ws.onclose = function() {
+            document.getElementById('status').textContent = 'Disconnected';
+            console.log('Disconnected');
+        };
+
+        ws.onerror = function(error) {
+            document.getElementById('status').textContent = 'Error';
+            console.log('Error: ' + error);
+        };
+    }
+
+    function sendMessage() {
+        var message = document.getElementById('messageInput').value;
+        ws.send(message);
+        document.getElementById('messageInput').value = ''; // Clear input field after sending
+    }
+</script>
+</head>
+<body>
+    <div id="status">Not connected</div>
+    <button onclick="connect()">Connect</button>
+    <input type="text" id="messageInput" placeholder="Enter a number">
+    <button onclick="sendMessage()">Send</button>
+    <div id="messages"></div>
+</body>
+</html>
