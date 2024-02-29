@@ -6,6 +6,6 @@ Every time a client connects to the server, the server will initialize a new cou
 The client can send messages containing raw numbers over the WebSocket connection. Whenever the server receives a number, it will increment the counter associated with the WebSocket connection by that number, and send back a message containing the current value of the counter.
 Both clients and servers should log all incoming/outgoing communications.
 
-For now, I have built working Go server and Android client that can communicate together.
+For now, I have built working Go (and Scala) server and Android client that can communicate together.
 
 
